@@ -1,7 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,7 +12,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 a {
@@ -47,7 +49,7 @@ a {
   gap: 33px;
 }
 .header svg:hover path {
-  fill: #F16D7F;
+  fill: #f16d7f;
 }
 
 .cart:hover::after {
@@ -75,7 +77,7 @@ a {
   right: 0;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #FFF;
+  background-color: #fff;
   font-size: 14px;
   font-weight: 400;
 }
@@ -86,7 +88,7 @@ a {
   padding-left: 32px;
 }
 .hamburger .pull-menu h4 {
-  color: #F16D7F;
+  color: #f16d7f;
   padding-top: 8px;
   padding-bottom: 15px;
   padding-left: 32px;
@@ -97,7 +99,7 @@ a {
   padding-left: 53px;
 }
 .hamburger .pull-menu ul li a {
-  color: #6F6E6E;
+  color: #6f6e6e;
 }
 .hamburger input:checked ~ .pull-menu {
   z-index: 2;
@@ -106,7 +108,7 @@ a {
 }
 
 .pink_colored {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .registration {
@@ -119,7 +121,7 @@ a {
 }
 .registration h1 {
   font-size: 24px;
-  color: #F16D7F;
+  color: #f16d7f;
   font-weight: normal;
 }
 .registration .breadcrumbs {
@@ -138,11 +140,11 @@ a {
 }
 .registration .breadcrumbs li:last-child a {
   font-weight: 700;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .registration_form_and_loyalty {
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   gap: 128px;
   padding-top: 64px;
@@ -162,6 +164,7 @@ a {
 .registration_form_and_loyalty form #last_name,
 .registration_form_and_loyalty form #email,
 .registration_form_and_loyalty form #password {
+  font-family: "Lato";
   padding: 12px 16px 16px;
   font-size: 13px;
   font-weight: 300;
@@ -192,13 +195,13 @@ a {
   box-sizing: border-box;
   background-clip: content-box;
   border: solid 1px #a4a4a4;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
   position: relative;
   top: 5px;
 }
 .registration_form_and_loyalty form .gender input:checked + label:before {
-  background-color: #F16D7F;
+  background-color: #f16d7f;
 }
 .registration_form_and_loyalty form p {
   font-size: 13px;
@@ -208,24 +211,28 @@ a {
   margin-bottom: 20px;
 }
 .registration_form_and_loyalty form button {
-  color: #F16D7F;
-  background-color: #FFF;
+  width: 166px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: normal;
+  color: #f16d7f;
+  background-color: #fff;
   outline: none;
   border: solid 1px #a4a4a4;
-  padding: 16px 28px;
+  padding: 16px 26px;
 }
 .registration_form_and_loyalty form button svg {
   margin-left: 20px;
 }
 .registration_form_and_loyalty form button svg path {
-  fill: #F16D7F;
+  fill: #f16d7f;
 }
 .registration_form_and_loyalty form button:hover {
-  color: #FFF;
-  background-color: #F16D7F;
+  color: #fff;
+  background-color: #f16d7f;
 }
 .registration_form_and_loyalty form button:hover svg path {
-  fill: #FFF;
+  fill: #fff;
 }
 .registration_form_and_loyalty .loyalty h3 {
   font-size: 24px;
@@ -325,8 +332,9 @@ a {
   font-weight: 400;
 }
 .subscribe .form__input {
+  font-family: "Lato";
   display: inline-block;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   opacity: 0.671;
   padding: 16px 64px 16px 22px;
   border-top-left-radius: 50px;
@@ -336,11 +344,12 @@ a {
   outline: 0;
 }
 .subscribe .form__button {
+  font-family: "Lato";
   display: inline-block;
   padding: 16px 22px;
   text-align: center;
-  background-color: #F16D7F;
-  color: #FFF;
+  background-color: #f16d7f;
+  color: #fff;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border: none;
@@ -353,7 +362,7 @@ a {
   justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 16px;
   font-weight: 400;
 }
@@ -363,11 +372,207 @@ a {
 }
 .footer__svg_wrapper {
   padding: 8px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .footer__svg_wrapper:hover {
-  background-color: #F16D7F;
+  background-color: #f16d7f;
 }
 .footer__svg_wrapper:hover svg path {
-  fill: #FFF;
+  fill: #fff;
+}
+
+@media (wax-width: 1500px) {
+  .pull-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 12%;
+  }
+  .subscribe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .subscribe .img_back {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .subscribe__left_right_wrapper {
+    gap: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .subscribe__left {
+    gap: 15px;
+  }
+  .subscribe__right {
+    gap: 15px;
+  }
+}
+@media (max-width: 1300px) {
+  .hamburger input:checked ~ .pull-menu {
+    display: none;
+  }
+}
+@media (max-width: 1160px) {
+  .subscribe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .subscribe .img_back {
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .subscribe__left_right_wrapper {
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .subscribe__left {
+    gap: 10px;
+  }
+  .subscribe__right {
+    gap: 10px;
+  }
+}
+@media (max-width: 1150px) {
+  .center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+  }
+}
+@media (max-width: 1024px) {
+  /* Стили для планшета */
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .registration {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .registration_form_and_loyalty {
+    gap: 22px;
+    padding-top: 40px;
+  }
+  .registration_form_and_loyalty form {
+    flex-grow: 1;
+    flex-basis: 360px;
+  }
+  .registration_form_and_loyalty .loyalty {
+    flex-grow: 1;
+    flex-basis: 354px;
+  }
+  .registration_form_and_loyalty .loyalty h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .registration_form_and_loyalty .loyalty p {
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 32px;
+  }
+  .registration_form_and_loyalty .loyalty ul li {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .subscribe {
+    min-height: 614px;
+  }
+  .subscribe .img_back {
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .subscribe__left_right_wrapper {
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+  .subscribe__left {
+    text-align: center;
+  }
+  .subscribe__right {
+    gap: 27px;
+    text-align: center;
+  }
+  .subscribe__right__text {
+    line-height: 162%;
+  }
+  .subscribe .form__input {
+    margin-right: -67px;
+  }
+  .subscribe .form__button {
+    z-index: 1;
+  }
+}
+@media (max-width: 767px) {
+  /* Стили для мобильных телефонов */
+  .center {
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+  }
+  .desktop_tablet_none {
+    display: block;
+  }
+  .cellphone_none {
+    display: none;
+  }
+  .registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .registration_form_and_loyalty {
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 100px;
+  }
+  .registration_form_and_loyalty form {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+  .registration_form_and_loyalty .loyalty {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+  .subscribe {
+    min-height: 550px;
+  }
+  .subscribe__left_right_wrapper {
+    padding-top: 64px;
+    padding-bottom: 110px;
+    gap: 59px;
+  }
+  .subscribe .quotation {
+    font-size: 18px;
+  }
+  .subscribe__right {
+    gap: 22px;
+  }
+  .subscribe__right__text {
+    line-height: 153.2%;
+  }
+  .subscribe__right__text h3 {
+    font-size: 14px;
+  }
+  .subscribe .form__input {
+    margin-right: -70px;
+  }
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 0 9px 0;
+  }
+  .social_media_icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
